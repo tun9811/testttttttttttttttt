@@ -10,24 +10,31 @@ local function loadScript(url)
     end
 end
 
+-- ตรวจสอบว่าเกมที่เล่นมี ID อยู่ใน mapIDs
 if table.find(mapIDs, game.PlaceId) then
-    if game.PlaceId == 2753915549 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
-    elseif game.PlaceId == 4442272183 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
-    elseif game.PlaceId == 7449423635 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
-    elseif game.PlaceId == 16732694052 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttfisch/refs/heads/main/script.lua"))()
-    elseif game.PlaceId == 18668065416 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
-    elseif game.PlaceId == 99999183305180 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
-    elseif game.PlaceId == 18668065416 and getgenv().Mode == "Kaitun" then
-        game.Players.LocalPlayer:Kick("ยังไม่ได้ทำ")
-    elseif game.PlaceId == 99999183305180 and getgenv().Mode == "Kaitun" then
-        game.Players.LocalPlayer:Kick("ยังไม่ได้ทำ")
+    -- ตรวจสอบสถานะของ Mode
+    if getgenv().Mode == "Kaitun" then
+        -- ถ้า Mode เป็น "Kaitun" ให้เตะผู้เล่น
+        if game.PlaceId == 18668065416 or game.PlaceId == 99999183305180 then
+            game.Players.LocalPlayer:Kick("ยังไม่ได้ทำ")
+        end
+    else
+        -- โหลดสคริปต์ตาม ID ของเกม
+        if game.PlaceId == 2753915549 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
+        elseif game.PlaceId == 4442272183 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
+        elseif game.PlaceId == 7449423635 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
+        elseif game.PlaceId == 16732694052 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttfisch/refs/heads/main/script.lua"))()
+        elseif game.PlaceId == 18668065416 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
+        elseif game.PlaceId == 99999183305180 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
+        end
     end
 else
+    -- หาก PlaceId ไม่มีใน mapIDs ให้เตะผู้เล่น
     game.Players.LocalPlayer:Kick("ยังไม่ได้ทำสคริปแมพนี้คนสร้างนอนอ้วนอยู่")
 end
