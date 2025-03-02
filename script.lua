@@ -6,7 +6,7 @@ local function loadScript(url)
     end)
     if not success then
         warn("ไม่สามารถโหลดสคริปต์ได้:", result)
-        game.Players.LocalPlayer:Kick("ยังไม่ได้ทำสคริปแมพนี้คนสร้างนอนอ้วนอยู่")
+        game.Players.LocalPlayer:Kick("Haven't made a script for this map yet. The creator is still fat.")
     end
 end
 
@@ -16,7 +16,7 @@ if table.find(mapIDs, game.PlaceId) then
     if getgenv().Mode == "Kaitun" then
         -- ถ้า Mode เป็น "Kaitun" ให้เตะผู้เล่น
         if game.PlaceId == 18668065416 or game.PlaceId == 99999183305180 then
-            game.Players.LocalPlayer:Kick("ยังไม่ได้ทำ")
+            game.Players.LocalPlayer:Kick("Haven't done it yet.")
         end
     else
         -- โหลดสคริปต์ตาม ID ของเกม
@@ -36,5 +36,5 @@ if table.find(mapIDs, game.PlaceId) then
     end
 else
     -- หาก PlaceId ไม่มีใน mapIDs ให้เตะผู้เล่น
-    game.Players.LocalPlayer:Kick("ยังไม่ได้ทำสคริปแมพนี้คนสร้างนอนอ้วนอยู่")
+    game.Players.LocalPlayer:Kick("Haven't made a script for this map yet. The creator is still fat.")
 end
