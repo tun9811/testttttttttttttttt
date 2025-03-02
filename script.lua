@@ -23,6 +23,10 @@ if table.find(mapIDs, game.PlaceId) then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
     elseif game.PlaceId == 99999183305180 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
+    elseif game.PlaceId == 18668065416 and getgenv().Mode == "Kaitun" then
+        game.Players.LocalPlayer:Kick("ยังไม่ได้ทำ")
+    elseif game.PlaceId == 99999183305180 and getgenv().Mode == "Kaitun" then
+        game.Players.LocalPlayer:Kick("ยังไม่ได้ทำ")
     end
 else
     game.Players.LocalPlayer:Kick("ยังไม่ได้ทำสคริปแมพนี้คนสร้างนอนอ้วนอยู่")
