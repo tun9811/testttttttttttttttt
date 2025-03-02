@@ -1,4 +1,4 @@
-local mapIDs = {2753915549, 4442272183, 7449423635, 16732694052, 18668065416, 99999183305180}
+local mapIDs = {2753915549, 4442272183, 7449423635, 16732694052, 18668065416, 99999183305180, 92517437168342}
 
 local function loadScript(url)
     local success, result = pcall(function()
@@ -31,6 +31,8 @@ if table.find(mapIDs, game.PlaceId) then
         elseif game.PlaceId == 18668065416 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
         elseif game.PlaceId == 99999183305180 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
+        elseif game.PlaceId == 92517437168342 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
         end
     end
