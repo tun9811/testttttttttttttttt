@@ -35,9 +35,9 @@ if table.find(mapIDs, game.PlaceId) then
         elseif game.PlaceId == 92517437168342 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
         elseif game.PlaceId == 87039211657390 then
-
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttAriseCrossover/refs/heads/main/script.lua"))()
         elseif game.PlaceId == 128336380114944 then
-            
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttAriseCrossover/refs/heads/main/script.lua"))()
         end
     end
 else
