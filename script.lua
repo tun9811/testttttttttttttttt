@@ -20,15 +20,17 @@ if table.find(mapIDs, game.PlaceId) then
         end
     else
         -- โหลดสคริปต์ตาม ID ของเกม
+        --[[]
         if game.PlaceId == 2753915549 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
         elseif game.PlaceId == 4442272183 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
         elseif game.PlaceId == 7449423635 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbloxfruit/refs/heads/main/script.lua"))()
-        elseif game.PlaceId == 16732694052 then
+        if game.PlaceId == 16732694052 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttfisch/refs/heads/main/script.lua"))()
-        elseif game.PlaceId == 18668065416 then
+        --]]
+        if game.PlaceId == 18668065416 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
         elseif game.PlaceId == 99999183305180 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/tun9811/testtttttttttttttttbluelockrivals/refs/heads/main/script.lua"))()
